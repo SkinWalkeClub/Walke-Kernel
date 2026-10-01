@@ -1,8 +1,12 @@
+<p align="center">
+  <img src="https://media.discordapp.net/attachments/1536026906015694938/1555027080616476702/image.png?backend=b2&ex=6abf0753&is=6abdb5d3&hm=d81fb37c3563ee47c99060b37c93ab96e6146b2b3d6c40a138480d45cd05b36a&=&format=webp&quality=lossless&width=1280&height=483" width="900" alt="Walke Serializer">
+</p>
+
 # Walke Kernel
 
 A metatable control layer for your own client. It gives you one clean place to intercept how your client talks to the Roblox engine, instead of a pile of scripts all hooking the same metamethods and stepping on each other.
 
-You add rules. A rule says "when this method is called, do this". Walke Kernel installs a single managed hook on the game's metatable, runs your rules in order, and keeps the original behavior working for everything you did not touch.
+You add rules. A rule says "when this method is called, do this". Walke Kernel installs a single managed hook on the game metatable, runs your rules in order, and keeps the original behavior working for everything you did not touch.
 
 ## What it does
 
@@ -17,7 +21,6 @@ Rules are checked top to bottom and the first one that matches wins. Everything 
 
 ## What it does NOT do
 
-- **It is not an anti-cheat bypass and it does not hide you.** This controls how your client talks to the engine. It does nothing to stop a game from detecting that you hooked the metatable. If anything, hooking the core metatable is one of the more detectable things you can do, so do not assume it is invisible.
 - **It works on your own client only.** It hooks your metatable, in your session. It does not reach the server or other players.
 - **It is a framework, not a cheat.** It gives you the plumbing to intercept calls. What you do with that is on you.
 
